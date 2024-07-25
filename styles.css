@@ -34,22 +34,15 @@ nav ul li a {
     text-decoration: none;
 }
 
-.product-carousel {
-    position: relative;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
+.swiper-container {
+    width: 100%;
+    height: auto;
 }
 
-.carousel-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide {
+.product-carousel .swiper-slide, .banner-carousel .swiper-slide {
     display: flex;
     justify-content: space-around;
-    min-width: 100%;
+    align-items: center;
 }
 
 .product {
@@ -74,41 +67,10 @@ nav ul li a {
     text-decoration: none;
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-    user-select: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.banner-carousel {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    margin-top: 20px;
-}
-
 .banner-carousel img {
     width: 100%;
-    height: auto;
-    transition: transform 0.5s ease-in-out;
+    height: 300px;
+    object-fit: cover;
 }
 
 section {
