@@ -35,6 +35,20 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesoeet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <style>
+        .product-image {
+            width: 100%; /* Menyesuaikan gambar dengan lebar container */
+            height: auto; /* Menjaga rasio aspek gambar */
+        }
+        .product-container {
+            max-width: 300px; /* Atur ukuran maksimal container */
+            margin: 20px auto; /* Pusatkan container dengan margin */
+        }
+        .product-container img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <!-- banner bg main start -->
@@ -115,7 +129,6 @@
         </div>
         <!-- header section end -->
         <!-- banner section start -->
-        <!-- Removed large woman image and set background color to white -->
         <div class="banner_section layout_padding" style="background-color: white;">
             <div class="container">
                 <div id="my_slider" class="carousel slide" data-ride="carousel">
@@ -123,7 +136,25 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-4">
+                                            <img src="/mnt/data/cover.png" class="product-image" alt="Flamixs BBQ Sauce Cover">
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4">
+                                            <img src="/mnt/data/saucebbq.webp" class="product-image" alt="Flamixs BBQ Sauce">
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4">
+                                            <img src="/mnt/data/blackpepper.webp" class="product-image" alt="Flamixs Black Pepper Sauce">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-4">
+                                            <img src="/mnt/data/DALL·E 2024-07-25 14.05.08 - A high-quality image of someone pouring Flamixs BBQ Sauce over a steak. The image should be visually appealing, with the sauce bottle clearly visible .webp" class="product-image" alt="Pouring BBQ Sauce">
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4">
+                                            <img src="/mnt/data/woman.webp" class="product-image" alt="Woman Pouring Sauce">
+                                        </div>
+                                    </div>
                                     <div class="buynow_bt"><a href="https://shopee.co.id/flamixs">Buy Now</a></div>
                                 </div>
                             </div>
@@ -166,7 +197,7 @@
                         <h1 class="fashion_taital">Flamixs BBQ Sauce</h1>
                         <div class="fashion_section_2">
                             <div class="row">
-                                <div class="col-lg-4 col-sm-4">
+                                <div class="col-lg-6 col-sm-6">
                                     <div class="box_main">
                                         <h4 class="shirt_text">Flamixs BBQ Sauce</h4>
                                         <div class="bbq1"><img src="bbq1.png" alt="Flamixs BBQ Sauce"></div>
@@ -176,7 +207,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-4">
+                                <div class="col-lg-6 col-sm-6">
                                     <div class="box_main">
                                         <h4 class="shirt_text">Flamixs BBQ Sauce</h4>
                                         <div class="bbq2"><img src="bbq2.jpg" alt="Flamixs BBQ Sauce"></div>
@@ -186,7 +217,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <h1 class="fashion_taital">Flamixs Black Pepper Sauce</h1>
+                        <div class="fashion_section_2">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
                                     <div class="box_main">
                                         <h4 class="shirt_text">Flamixs Black Pepper Sauce</h4>
                                         <div class="bpp1"><img src="bpp1.png" alt="Flamixs Black Pepper Sauce"></div>
@@ -196,7 +236,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-4">
+                                <div class="col-lg-6 col-sm-6">
                                     <div class="box_main">
                                         <h4 class="shirt_text">Flamixs Black Pepper Sauce</h4>
                                         <div class="bpp2_img"><img src="bpp2.png" alt="Flamixs Black Pepper Sauce"></div>
@@ -265,4 +305,3 @@
     </script>
 </body>
 </html>
-
