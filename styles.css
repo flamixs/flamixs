@@ -59,6 +59,10 @@ nav ul li a {
     height: auto;
 }
 
+.product p {
+    margin: 10px 0;
+}
+
 .buy-now {
     display: block;
     margin-top: 10px;
@@ -82,3 +86,4 @@ footer {
     text-align: center;
     padding: 10px 20px;
 }
+
