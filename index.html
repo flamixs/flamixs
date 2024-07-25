@@ -19,34 +19,53 @@
     </header>
     
     <section id="home">
-        <img src="Promo.png" alt="Promotion Banner" class="promo-banner">
-        <div class="product-slider">
-            <div class="product">
-                <img src="bbq1.png" alt="BBQ Sauce">
-                <p>Barbeque Sauce 100gr</p>
-                <a href="https://shopee.id/flamix" class="buy-now">Buy Now</a>
+        <div class="product-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="product">
+                        <img src="bbq1.png" alt="BBQ Sauce">
+                        <p>Barbeque Sauce 100gr</p>
+                        <a href="https://shopee.id/flamix" class="buy-now">Buy Now</a>
+                    </div>
+                    <div class="product">
+                        <img src="bpp1.png" alt="Black Pepper Sauce">
+                        <p>Black Pepper Sauce 100gr</p>
+                        <a href="https://shopee.id/flamix" class="buy-now">Buy Now</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="product">
+                        <img src="bpp2.png" alt="Black Pepper Sauce">
+                        <p>Black Pepper Sauce 250gr</p>
+                        <a href="https://shopee.id/flamix" class="buy-now">Buy Now</a>
+                    </div>
+                    <div class="product">
+                        <img src="bbq2.jpg" alt="BBQ Sauce">
+                        <p>Barbeque Sauce 250gr</p>
+                        <a href="https://shopee.id/flamix" class="buy-now">Buy Now</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="product">
+                        <img src="saucebbq.webp" alt="BBQ Sauce">
+                        <p>Barbeque Sauce 500gr</p>
+                        <a href="https://shopee.id/flamix" class="buy-now">Buy Now</a>
+                    </div>
+                    <div class="product">
+                        <img src="blackpepper.webp" alt="Black Pepper Sauce">
+                        <p>Black Pepper Sauce 500gr</p>
+                        <a href="https://shopee.id/flamix" class="buy-now">Buy Now</a>
+                    </div>
+                </div>
             </div>
-            <div class="product">
-                <img src="bpp1.png" alt="Black Pepper Sauce">
-                <p>Black Pepper Sauce 100gr</p>
-                <a href="https://shopee.id/flamix" class="buy-now">Buy Now</a>
-            </div>
-            <div class="product">
-                <img src="bpp2.png" alt="Black Pepper Sauce">
-                <p>Black Pepper Sauce 250gr</p>
-                <a href="https://shopee.id/flamix" class="buy-now">Buy Now</a>
-            </div>
-            <div class="product">
-                <img src="bbq2.jpg" alt="BBQ Sauce">
-                <p>Barbeque Sauce 250gr</p>
-                <a href="https://shopee.id/flamix" class="buy-now">Buy Now</a>
-            </div>
-            <div class="product">
-                <img src="saucebbq.webp" alt="BBQ Sauce">
-                <p>Barbeque Sauce 500gr</p>
-                <a href="https://shopee.id/flamix" class="buy-now">Buy Now</a>
-            </div>
-            <!-- Add more products as needed -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        
+        <div class="banner-carousel">
+            <img src="woman.webp" alt="Banner Image" class="banner">
+            <img src="saucebbq.webp" alt="Banner Image" class="banner">
+            <img src="blackpepper.webp" alt="Banner Image" class="banner">
         </div>
     </section>
     
@@ -64,5 +83,7 @@
     <footer>
         <p>&copy; 2024 Flamixs. All rights reserved.</p>
     </footer>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
