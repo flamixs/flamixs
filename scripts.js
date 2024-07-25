@@ -1,32 +1,25 @@
-let currentSlide = 0;
-
-function moveSlide(direction) {
-    const slides = document.querySelectorAll('.carousel-container .carousel-slide');
-    const totalSlides = slides.length;
-    
-    currentSlide += direction;
-    if (currentSlide < 0) {
-        currentSlide = totalSlides - 1;
-    } else if (currentSlide >= totalSlides) {
-        currentSlide = 0;
-    }
-
-    const offset = -currentSlide * 100;
-    document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
-}
-
-let currentBanner = 0;
-
-function moveBanner() {
-    const banners = document.querySelectorAll('.banner-carousel img');
-    const totalBanners = banners.length;
-    
-    currentBanner = (currentBanner + 1) % totalBanners;
-    
-    const offset = -currentBanner * 100;
-    banners.forEach(banner => {
-        banner.style.transform = `translateX(${offset}%)`;
+document.addEventListener('DOMContentLoaded', function () {
+    const productSwiper = new Swiper('.product-carousel', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+        },
     });
-}
 
-setInterval(moveBanner, 3000);
+    const bannerSwiper = new Swiper('.banner-carousel', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+});
